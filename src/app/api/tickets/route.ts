@@ -42,7 +42,7 @@ export async function POST(request: Request) {
         });
 
         return NextResponse.json(result);
-    } catch (error) {
+    } catch {
         return NextResponse.json(
             { error: "Failed to book ticket" },
             { status: 400 }
